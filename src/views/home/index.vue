@@ -238,7 +238,6 @@
     name: 'home',
     data() {
       return {
-//        aa: '',
         pickerOptions: {
           shortcuts: [{
             text: '最近一周',

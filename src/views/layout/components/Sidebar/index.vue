@@ -8,7 +8,6 @@
       background-color="#304156"
       text-color="#bfcbd9"
       active-text-color="#ffffff"
-      :unique-opened="uniqueOpened"
     >
       <sidebar-item :routes="routes"></sidebar-item>
     </el-menu>
@@ -28,7 +27,6 @@
       ]),
       data() {
         return {
-          uniqueOpened: true
         }
       },
       routes() {

@@ -33,15 +33,15 @@ export const constantRouterMap = [
     }]
   },
   {
-    path: '/pms',
+    path: '/sys',
     component: Layout,
-    redirect: '/pms/product',
-    name: 'pms',
+    redirect: '/sys/user',
+    name: 'sys',
     meta: {title: '系统管理', icon: 'product'},
     children: [{
-      path: 'product',
-      name: 'product',
-      component: () => import('@/views/pms/product/index'),
+      path: 'user',
+      name: 'user',
+      component: () => import('@/views/sys/user/index'),
       meta: {title: '管理员查看', icon: 'product-list'}
     },
       {
