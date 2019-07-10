@@ -45,19 +45,19 @@ export const constantRouterMap = [
       meta: {title: '管理员查看', icon: 'product-list'}
     },
       {
-        path: 'addProduct',
-        name: 'addProduct',
-        component: () => import('@/views/pms/product/add'),
-        meta: {title: '角色查看', icon: 'product-add'}
-      },
-      /*{
-        path: 'updateProduct',
-        name: 'updateProduct',
-        component: () => import('@/views/pms/product/update'),
-        meta: {title: '菜单管理', icon: 'product-add'},
+        path: 'addUser',
+        name: 'addUser',
+        component: () => import('@/views/sys/user/add'),
+        meta: {title: '添加管理员', icon: 'product-add'},
         hidden: true
       },
       {
+        path: 'updateProduct',
+        name: 'updateProduct',
+        component: () => import('@/views/pms/product/update'),
+        meta: {title: '角色查看', icon: 'product-add'},
+      },
+      /*{
         path: 'productRecycle',
         name: 'productRecycle',
         component: () => import('@/views/pms/product/index'),

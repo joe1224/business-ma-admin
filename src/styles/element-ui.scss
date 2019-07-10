@@ -1,4 +1,4 @@
- //to reset element-ui default css
+//to reset element-ui default css
 .el-upload {
   input[type="file"] {
     display: none !important;
@@ -29,5 +29,9 @@
 }
 
 .el-card {
-  background-color: #eae3e35c;
+  //background-color: #eae3e35c;
+}
+
+.el-radio {
+  margin-right: 30px !important;
 }

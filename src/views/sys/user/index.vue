@@ -151,7 +151,7 @@
       },
 
       handleAddProduct() {
-        this.$router.push({path: '/pms/addProduct'});
+        this.$router.push({path: '/sys/addUser'});
       },
 
       handleSizeChange(val) {
