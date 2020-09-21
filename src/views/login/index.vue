@@ -24,6 +24,7 @@
         </el-form-item>
         <el-form-item prop="password">
           <el-input name="password"
+                    ref="password"
                     :type="pwdType"
                     @keyup.enter.native="handleLogin"
                     v-model="loginForm.password"
@@ -107,6 +108,9 @@
         } else {
           this.pwdType = 'password'
         }
+        this.$nextTick(() => {
+          this.$refs.password.focus()
+        })
       },
       handleLogin() {
         this.$refs.loginForm.validate(valid => {
